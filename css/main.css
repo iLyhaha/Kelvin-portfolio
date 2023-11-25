@@ -1,0 +1,272 @@
+@import '/css/reset.css';
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: black;
+  font-size: 14px;
+}
+
+.container {
+  max-width: 1230px;
+  padding: 0 30px;
+  /* вировнять по центру */
+  margin: 0 auto; 
+}
+/* Header */
+.header {
+  padding-top: 46px;
+  background: #F1F1F1;
+}
+
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 76px;
+}
+
+.logo {
+position: relative;
+padding: 0px 12px 3px 0px;
+font-size: 32px;
+font-weight: 700;
+line-height: 32px;
+letter-spacing: 0em;
+color: black;
+line-height: 1;
+}
+
+.logo::after {
+position: absolute;
+right: 0;
+bottom: 0;
+content: '';
+display: block;
+width: 8px;
+height: 8px;
+background-color: #FDA300;
+border-radius: 50%;
+
+}
+
+/* nav */
+
+.nav-list{
+display: flex;
+column-gap: 50px;
+font-family: Poppins;
+font-size: 14px;
+font-weight: 500;
+}
+
+.nav-button {
+  display: none;
+}
+
+
+.nav-link{
+  color: #000;
+
+}
+
+.nav-link.active{
+  color: #606060;
+}
+
+/* Header content */
+
+.header-row {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 30px;
+}
+
+.header-content{
+  max-width: 500px;
+  margin-top: 124px;
+}
+
+.header-heading{
+margin-bottom: 20px;
+font-size: 44px;
+font-weight: 600;
+}
+
+.header-content p {
+line-height: 2;
+}
+
+/* Service */
+
+.services {
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+
+.service-row {
+  display: flex;
+  column-gap: 30px;
+}
+
+.service-card-img{
+    margin-bottom: 30px;
+}
+
+.service-card-title {
+  color: #000;
+  font-family: Poppins;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.services-card p {
+  color: #000;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 200%; /* 28px */
+  
+}
+
+/* Portfolio */
+
+.portfolio {
+  padding: 90px 0;
+   background-color: #F1F1F1;
+}
+
+.title-1 {
+  color: var(--Black, #070707);
+  text-align: center;
+  font-family: Poppins;
+  font-size: 34px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-bottom: 70px;
+}
+
+.portfolio-title {
+  margin-bottom: 70px;
+  text-align: center;
+}
+
+.project {
+  text-align: center;
+}
+
+.project-img{
+  margin-bottom: 40px;
+}
+
+.project-title{
+  color: var(--Black, #070707);
+text-align: center;
+font-family: Poppins;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+text-decoration-line: underline;
+}
+
+.project-title a {
+  color: var(--Black, #070707);
+  text-align: center;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration-line: underline;
+}
+
+.project + .project {
+  margin-top: 90px;
+}
+
+/* contacts */
+.title-1{
+  margin-bottom: 40px;
+}
+
+.contacts-title {
+  margin-bottom: 40px;
+  color: var(--Black, #070707);
+  text-align: center;
+  font-family: Poppins;
+  font-size: 34px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.contacts {
+  padding-top: 90px;
+  text-align: center;
+}
+
+.contacts-content {
+  color: var(--Black, #070707);
+text-align: center;
+font-family: Poppins;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+margin-bottom: 47px;
+margin-left: auto;
+margin-right: auto;
+}
+.contacts-button {
+  margin-bottom: 80px;
+}
+.button {
+  color: #FFF;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+
+
+  background-color:#070707;
+  display: inline-block;
+  padding: 7px 22px;
+  border-radius: 30px;
+
+  transition: background-color 0.2s ease-in , top 0.2 ease-in;
+}
+
+.button:hover , button:focus {
+  background-color:#323232;
+}
+
+.button:active {
+  background-color:#000000;
+  position: relative;
+  top: 1px;
+}
+.contacts-social {
+  display: flex;
+  justify-content: center;
+  column-gap: 60px;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.contact-footer {
+  color: #828282;
+text-align: center;
+font-family: Poppins;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+margin-bottom: 90px;
+}
